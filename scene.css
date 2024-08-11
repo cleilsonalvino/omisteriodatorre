@@ -40,6 +40,10 @@ html, body{
 
 .panel a:hover{
     padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    animation: none;
+    border-radius: 10px;
 }
 
 .panel a[href="#"]{
@@ -57,6 +61,11 @@ html, body{
 
 h2{
     margin: 0px;
+}
+
+p{
+    text-indent: 20px;
+    text-align: justify;
 }
 
 
