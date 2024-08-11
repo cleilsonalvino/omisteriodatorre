@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px;
+    background-color: black;
+}
+
+nav{
+    height: 50px;
+}
+
+nav img{
+    height: 100%;
+}
+
+iframe{
+    width: 100%;
+    height: calc(100vh - 80px);
+    border: none;
+}
+
+.miniplayer{
+    width: 100px;
+    height: 100%;
+    float: right;
+}
