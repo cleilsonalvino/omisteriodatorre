@@ -18,17 +18,33 @@ html, body{
 
 .panel{
     position: fixed;
-    bottom: 70px;
-    left: 10px;
-    right: 10px;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     overflow-y: auto;
-    max-height: 100%;
+    max-height: 90%;
+
+    font-size: 1.3rem;
+}
+
+.panel p{
+    text-align: justify;
+    font-family: monospace;
+    line-height: 50px;
+    font-weight: bold;
+    text-shadow: 7px 2px 2px rgba(255, 0, 0, 0.514);
 }
 
 .panel a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    animation: piscar 2s linear infinite;
+    margin: 5px;
+}
+.menu a {
     display: block;
     color: white;
     text-decoration: none;
@@ -45,14 +61,26 @@ html, body{
     animation: none;
     border-radius: 10px;
 }
+.menu a:hover{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    animation: none;
+    border-radius: 10px;
+}
 
 .panel a[href="#"]{
     color: red;
 }
 
 .menu{
-    width: 30%;
-    min-width: 300px;
+    position: fixed;
+    bottom: 70px;
+    left: 10px;
+    right: 10px;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 300px;
     text-align: center;
     padding: 30px;
     margin: auto;
